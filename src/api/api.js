@@ -15,4 +15,24 @@ export const fetchParkingLots = async () => {
     }
 };
 
+export const parkCar = async (carPlate, strategy) => {
+    try {
+        const response = await api.post('/park', { carPlate, strategy });
+        return response.data;
+    } catch (error) {
+        console.error('Error parking car:', error);
+        throw error;
+    }
+};
+
+export const fetchCar = async (carPlate) => {
+    try {
+        const response = await api.get(`/fetch/${carPlate}`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching car:', error);
+        throw error;
+    }
+};
+
 export default api;
