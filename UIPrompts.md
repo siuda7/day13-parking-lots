@@ -57,3 +57,5 @@ The format of the parkinglots data is like this, you may store in the a local js
 There will be a component on top of the parking lots, whihc includes a input for car plate number, a select to choose parking strategy and one park button and one fetch button. These components will need to be in same row
 
 --------------------------
+
+when the fetch function is click, it will call a api /fetch/{carpPlate}, where carPlate is the inputted car plate and a get requets. 
