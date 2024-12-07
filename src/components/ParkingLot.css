@@ -1,0 +1,29 @@
+/* src/ParkingLot.css */
+.parking-lot {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Increased width */
+}
+
+.grid {
+    display: grid;
+    gap: 10px; /* Increased gap */
+}
+
+.grid-3x3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4x4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    border: 1px solid #000;
+    height: 70px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Increased font size */
+}
